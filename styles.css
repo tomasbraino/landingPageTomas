@@ -138,6 +138,27 @@ li {
     width: 100%;
     line-height: 1.6;
 }
+
+/*ABOUT*/
+
+.about-section {
+    background: #671414;
+    padding: 12rem 0;
+}
+
+.container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.heading_content{
+    margin-bottom: 9rem
+}
+
+.about_title{}
+
+
 /*CONTACT*/
 .contact {
     background: linear-gradient(to right, rgba(245, 245, 245, 0.8),
@@ -145,10 +166,127 @@ li {
     background-size: cover;
     background-position: center;
 }
+
+.contact_form {
+    padding: 12rem 0;
+}
+
+.main-container {
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+
+.contact__form-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+}
+
+.heading-sec__mb-med {
+    margin-bottom: 9rem;
+}
+
+.heading-sec__main--lt {
+    color: #111;
+    font-weight: 800;
+}
+
+.heading-sec__main {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #111;
+}
+
+.heading-sec__sub--lt {
+    color: #333;
+}
+
+.heading-sec__sub {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 2rem;
+    font-weight: 500;
+    max-width: 80rem;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.contact__form-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: white;
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+}
+
+
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.contact__form-field {
+    margin-bottom: 4rem;
+}
+
+.contact__form-label {
+    color: #666;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.contact__form-input {
+    color: #333;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.contact__btn {
+    width: 30%;
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+}
+
+.btn--theme {
+    background: #0c0c70;
+    color: #fff;
+}
+
+
+
 /*FOOTER*/
 .main-footer {
-    background: rgb(53,53,54);
-    background: linear-gradient(0deg, rgba(53,53,54,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(53, 53, 54);
+    background: linear-gradient(0deg, rgba(53, 53, 54, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .main-container {
@@ -188,7 +326,18 @@ li {
     margin-left: 2px;
 }
 
-/* *, *::after, *::before { /*que es es esto? 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+ *, *::after, *::before { /*que es es esto? movimiento de la web?*/
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -198,4 +347,4 @@ li {
 div {
     display: block;
     unicode-bidi: isolate;
-} */
+}
