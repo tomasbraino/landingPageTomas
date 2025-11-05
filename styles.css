@@ -1,13 +1,22 @@
 body {
     margin: 0px;
     width: 100%;
-    font-family: 'Bebas Neue';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 a {
     /*label selector*/
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: inherit;
+}
+
+ul {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+li {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 /*HEADER*/
@@ -36,11 +45,13 @@ a {
 }
 
 #nav {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     display: flex;
 }
 
 #nav ul {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -51,6 +62,7 @@ a {
 }
 
 #nav>ul>li {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     display: flex;
     transition:  all 300ms;
 }
@@ -86,6 +98,7 @@ a {
 }
 
 .projectButton{
+    font-family: 'Bebas Neue';
     background-color:#57647c;
     font-size: 2rem;
     letter-spacing: 1px;
@@ -112,6 +125,7 @@ a {
 }
 
 .heading-primary {
+    font-family: 'Bebas Neue';
     font-size: 6rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -126,6 +140,7 @@ a {
 }
 
 .text-primary {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 2.2rem;
     text-align: center;
@@ -151,6 +166,7 @@ a {
 }
 
 .about_title {
+    font-family: 'Bebas Neue';
     display: block;
     font-size: 4rem;
     text-transform: uppercase;
@@ -178,7 +194,7 @@ a {
     column-gap: 94.4px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10rem;
+    column-gap: 5rem;
     margin: auto;
 }
 
@@ -199,10 +215,11 @@ a {
 }
 
 .parag {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin-top: 10px;
     margin-bottom: 15px;
     color: #636161;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .my_skills_column {}
@@ -227,12 +244,107 @@ a {
     text-align: center;
     background-color: rgba(102, 102, 187, 0.2);
     border-radius: 9px;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
     color: #636363;
 }
 
 
+
+/*PROJECTS*/
+
+.projects-section {
+    background: #fafafa;
+    display: flex;
+    padding: 12rem 0;
+}
+
+.projects__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10rem;
+}
+
+.projects__row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.projects__row-img-cont {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    border-radius: 9px;
+    background: white;
+}
+
+.projects__row-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.projects__row-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects__row-content-title {
+    text-align: center;
+    margin: 0px 0px 2rem 0px;
+    font-size: 50px;
+    color: #111;
+}
+
+.projects__row-content-btns {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectButton--inverse {
+    background-color: white;
+    color: #57647c;
+    border: 2px solid #57647c;
+}
+
+.projectButton--inverse:hover {
+    background-color: #57647c;
+    color: white;
+    transform: translateY(-7px);
+}
+
+/* Responsive styles for Projects section */
+@media (max-width: 768px) {
+    .projects__row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .projects__row-img-cont {
+        order: 1;
+    }
+    
+    .projects__row-content {
+        order: 2;
+    }
+    
+    .projects__row-content-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects__row-content-btns .projectButton {
+        width: 100%;
+        max-width: 30rem;
+        text-align: center;
+    }
+}
 
 /*CONTACT*/
 .contact {
@@ -346,6 +458,7 @@ form {
 }
 
 .contact__btn {
+    font-family: 'Bebas Neue';
     background-color:#57647c;
     font-size: 2rem;
     letter-spacing: 1px;
