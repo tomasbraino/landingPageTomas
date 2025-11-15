@@ -3,59 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tomas Brainovich - Desarrollador Web</title>
-  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header_content">
-
-      <div class="header_logo">
-        <div class="header__logo-img-cont">
-          <span class="header_title">Tomas Brainovich</span>
-        </div>
-
-      </div>
-
-      <nav id="nav">
-        <ul>
-          <li>
-            <a href="./#home">Home</a>
-          </li>
-
-          <li>
-            <a href="./#about">About</a>
-          </li>
-
-          <li>
-            <a href="./#projects">Projects</a>
-          </li>
-
-          <li>
-            <a href="./#contact">Contact</a>
-          </li>
-        </ul>
-
-      </nav>
-
-    </div>
-  </header>
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="./#home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <span class="fs-4">Tomas Brainovich</span>
+      </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="./#home" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="./#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="./#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </header>
+  </div>
 
   <!-- Blocks for content -->
 
   <section id="home" class="home-section"> <!--Home introduction-->
     <div class="home-section__content">
-      <h1 class="heading-primary"> Hey, I'm Tomas Brainovich</h1>
       <div class="home-section__info">
         <p class="text-primary">
 
-          Desarrollo Web Estratégico para Negocios que Quieren Vender Más. 
-          Transformo tu presencia online en tu herramienta de ventas más poderosa.        </p>
+          Desarrollo Web Estratégico para Negocios que Quieren Vender Más. </p>
+          <!-- Transformo tu presencia online en tu herramienta de ventas más poderosa.         -->
       </div>
       <div class="home-section_button">
         <a href="./#contact" class="projectButton">Empieza tu proyecto ahora</a>
@@ -63,10 +53,6 @@
 
 
     </div>
-
-
-    <div class="home-section__socials"> </div>
-    <div class="home-section__mouse-scroll-cont"></div>
   </section>
 
   <!--Contact-->
