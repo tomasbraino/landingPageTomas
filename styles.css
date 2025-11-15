@@ -48,6 +48,19 @@ header .nav-pills .nav-link.active {
     color: white;
 }
 
+/* Responsive: center nav on mobile */
+@media (max-width: 767px) {
+    header .col-md-4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    header .col-md-4:last-child {
+        display: none;
+    }
+}
+
 /*BOOTSTRAP HEADER UTILITY STYLES*/
 .form-control-dark {
     border-color: var(--bs-gray);
