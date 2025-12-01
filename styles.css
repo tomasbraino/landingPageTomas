@@ -5,81 +5,6 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-a {
-    /*label selector*/
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
-
-li {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
-
-/*BOOTSTRAP SIMPLE HEADER CUSTOMIZATION*/
-header {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-}
-
-header .fs-4 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    color: #080808;
-}
-
-header .nav-pills .nav-link {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    color: #080808;
-    transition: all 300ms;
-}
-
-header .nav-pills .nav-link:hover {
-    background-color: #57647c;
-    color: white;
-}
-
-header .nav-pills .nav-link.active {
-    background-color: #57647c;
-    color: white;
-}
-
-/* Responsive: center nav on mobile */
-@media (max-width: 767px) {
-    header .col-md-4 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    
-    header .col-md-4:last-child {
-        display: none;
-    }
-}
-
-/*BOOTSTRAP HEADER UTILITY STYLES*/
-.form-control-dark {
-    border-color: var(--bs-gray);
-}
-
-.form-control-dark:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-}
-
-.text-small {
-    font-size: 85%;
-}
-
-.dropdown-toggle:not(:focus) {
-    outline: 0;
-}
-
-
 /*HOME SECTION*/
 
 .home-section {
@@ -90,8 +15,8 @@ header .nav-pills .nav-link.active {
 }
 
 .home-section_button{
-    margin-top: 5rem;
-    text-align: center;
+    margin-top: 3rem;
+    text-align: left;
     flex-grow: 1;
 }
 
@@ -135,6 +60,34 @@ header .nav-pills .nav-link.active {
 .home-section__info {
     margin: 3rem auto 0 auto;
     max-width: 80rem;
+}
+
+.home-section__layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.home-section__text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.home-section__form {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .home-section__layout {
+        flex-direction: column;
+    }
+    
+    .home-section__form {
+        max-width: 100%;
+    }
 }
 
 .text-primary {
