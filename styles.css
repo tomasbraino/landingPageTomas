@@ -80,6 +80,13 @@ body {
     max-width: 500px;
 }
 
+/* Navbar responsive adjustments */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .home-section__layout {
         flex-direction: column;
@@ -87,6 +94,15 @@ body {
     
     .home-section__form {
         max-width: 100%;
+    }
+    
+    .home-section__form form {
+        padding: 2rem !important;
+    }
+    
+    .home-section__form .form-control {
+        font-size: 1rem;
+        padding: 0.75rem;
     }
 }
 
@@ -315,18 +331,6 @@ body {
     width: 90%;
 }
 
-.contact__form-container {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background: white;
-    padding: 4rem;
-    margin-top: 6rem;
-    max-width: 80rem;
-    text-align: right;
-    width: 95%;
-    border-radius: 5px;
-    margin: 5rem auto 0 auto;
-}
-
 .heading-sec__mb-med {
     margin-bottom: 9rem;
 }
@@ -469,4 +473,299 @@ form {
     text-decoration: underline;
     font-weight: bold;
     margin-left: 2px;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN IMPLEMENTATION
+   ============================================ */
+
+/* Tablet and below (max-width: 992px) */
+@media (max-width: 992px) {
+    /* Home Section Adjustments */
+    .home-section {
+        min-height: 50rem;
+    }
+    
+    .home-section__content {
+        width: 95%;
+        padding: 2rem 0;
+    }
+    
+    .home-section__info {
+        margin: 2rem auto 0 auto;
+    }
+    
+    .home-section__layout {
+        gap: 2rem;
+    }
+    
+    /* Contact Section */
+    .contact_form {
+        padding: 4rem 2rem;
+    }
+    
+    .contact__form-container {
+        padding: 3rem;
+    }
+    
+    /* Footer */
+    .main-footer__upper {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 6rem 0;
+    }
+    
+    .main-footer__column-1 {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Typography */
+    .heading-sec__main {
+        font-size: 3.5rem;
+    }
+    
+    .heading-sec__sub {
+        font-size: 1.8rem;
+    }
+    
+    .about_title {
+        font-size: 3.5rem;
+    }
+    
+    .about_intro {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Home Section Mobile */
+    .home-section {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+    
+    .home-section__content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+    
+    .home-section__info {
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    .home-section__layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .home-section__text {
+        min-width: 100%;
+    }
+    
+    .home-section__form {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* Typography Mobile */
+    .home-section__text h1 {
+        font-size: 2rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .home-section_button {
+        margin-top: 2rem;
+    }
+    
+    .home-section_button .btn {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    /* Contact Section Mobile */
+    .contact_form {
+        padding: 3rem 1.5rem;
+    }
+    
+    .contact-container {
+        width: 100%;
+    }
+    
+    .contact_head {
+        margin-bottom: 2rem;
+    }
+    
+    .heading-sec__main {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .heading-sec__sub {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+    
+    .contact__form-container {
+        padding: 2rem 1.5rem;
+        margin-top: 3rem;
+        width: 100%;
+    }
+    
+    .contact__form-label {
+        font-size: 1.4rem;
+    }
+    
+    .contact__form-input {
+        font-size: 1.4rem;
+        padding: 0.875rem;
+    }
+    
+    .contact__btn {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0.875rem 2rem;
+    }
+    
+    /* Footer Mobile */
+    .main-footer__upper {
+        padding: 4rem 0;
+        gap: 3rem;
+    }
+    
+    .main-footer__column-1,
+    .main-footer__column-2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-footer__social-cont {
+        justify-content: center;
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .main-footer__lower {
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* About Section Mobile */
+    .about_title {
+        font-size: 2.5rem;
+    }
+    
+    .about_intro {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+    
+    .content_column {
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
+    }
+    
+    /* Projects Mobile */
+    .projects-section {
+        padding: 6rem 0;
+    }
+    
+    .projects__row-content-title {
+        font-size: 3rem;
+    }
+    
+    /* General Mobile Adjustments */
+    .container {
+        margin: 15px;
+    }
+    
+    .main-container {
+        width: 95%;
+        padding: 0 1rem;
+    }
+    
+    .heading_content {
+        margin-bottom: 4rem;
+    }
+    
+    #title,
+    .skills_title {
+        font-size: 3rem;
+    }
+    
+    .parag {
+        font-size: 1.6rem;
+    }
+    
+    .technologies {
+        font-size: 1.6rem;
+        padding: 12px;
+        margin: 8px;
+    }
+}
+
+/* Small Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Extra small adjustments */
+    .home-section__text h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    .heading-sec__main {
+        font-size: 2rem;
+    }
+    
+    .heading-sec__sub {
+        font-size: 1.2rem;
+    }
+    
+    .contact__form-container {
+        padding: 1.5rem;
+    }
+    
+    .home-section_button .btn {
+        font-size: 1rem;
+        padding: 0.625rem 1.25rem;
+    }
+    
+    .contact__btn {
+        font-size: 1.4rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .about_title {
+        font-size: 2rem;
+    }
+    
+    .about_intro {
+        font-size: 1.2rem;
+    }
+    
+    #title,
+    .skills_title {
+        font-size: 2.5rem;
+    }
+    
+    .projects__row-content-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .home-section__content {
+        max-width: 120rem;
+    }
+    
+    .home-section__info {
+        max-width: 100rem;
+    }
 }
