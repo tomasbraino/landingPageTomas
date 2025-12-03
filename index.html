@@ -7,36 +7,53 @@
   <title>Tomas Brainovich - Desarrollador Web</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cosmo/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   
   <!-- HEADER, NAV BAR -->
-   <nav class="navbar navbar-expand-lg bg-dark justify-content-center" data-bs-theme="dark">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#home">Tomas Brainovich</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Navigation links -->
-     <div class="collapse navbar-collapse" id="navmenu">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Social</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://www.linkedin.com/in/tbraino" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="dropdown-item" href="https://github.com/tomasbraino" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="dropdown-item" href="https://twitter.com/tbrainovich" target="_blank" rel="noreferrer">Twitter</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#contact">Work with me</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 
   <!-- Blocks for content -->
 
