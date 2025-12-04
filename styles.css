@@ -5,13 +5,36 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+/*NAVBAR*/
+.navbar-transparent {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
 /*HOME SECTION*/
 
 .home-section {
     color: #fff;
-    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../../assets/svg/common-bg.svg);
+    background: 
+        linear-gradient(to right, rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)),
+        url(./assets/images/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 60rem;
     position: relative;
+}
+
+/* Hero section text colors */
+.home-section__text h1,
+.home-section__text .display-5 {
+    color: #00ffff !important; /* Bright cyan - Cyborg theme accent */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Subtle glow effect */
+}
+
+.home-section__text {
+    color: #ffffff;
 }
 
 .home-section_button{
