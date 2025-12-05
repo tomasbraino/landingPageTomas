@@ -87,41 +87,30 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-color: #57647c;
+    background: linear-gradient(45deg, #2fa4e7, #1a1a1a);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    /* Hides the pseudo-element when it's outside the button */
     transition: 0.5s;
     z-index: 1;
     /* Ensures text stays on top */
 }
 
 /* The Sliding Background Layer */
-.home-section_button .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    /* Starts with 0 width */
-    height: 100%;
-    z-index: -1;
-    /* Puts it behind the text */
-    transition: 0.5s;
-    /* Smooth animation speed */
-}
+
 
 /* Hover Effects */
+
+
+
+
 .home-section_button .btn:hover {
-    color: #1a1a1a;
-    /* Changes text color to dark on hover */
-    ;
-    /* Adds a glow effect */
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(47, 164, 231, 0.4);
 }
 
-.home-section_button .btn:hover::before {
-    width: 100%;
-    /* Expands the background to fill the button */
-}
+
 
 .projectButton {
     background-color: #57647c;
@@ -514,7 +503,7 @@ form {
 }
 
 .contact__btn {
-    background-color: #57647c;
+    background: linear-gradient(45deg, #2fa4e7, #1a1a1a);
     font-size: 2rem;
     letter-spacing: 1px;
     display: inline-block;
@@ -523,12 +512,17 @@ form {
     border-radius: 9px;
     color: white;
     position: relative;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-    transition: transform .3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .contact__btn:hover {
-    transform: translateY(-7px)
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(47, 164, 231, 0.4);
 }
 
 
