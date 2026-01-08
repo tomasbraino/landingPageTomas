@@ -24,8 +24,19 @@ body {
     /* Ensure z-index applies */
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-brand:hover {
+    color: #2fa4e7 !important;
+    /* Cyborg blue accent */
+}
+
 .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
     color: rgba(255, 255, 255, 0.8) !important;
 }
@@ -96,21 +107,12 @@ body {
     /* Ensures text stays on top */
 }
 
-/* The Sliding Background Layer */
-
-
-/* Hover Effects */
-
-
-
 
 .home-section_button .btn:hover {
     color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(47, 164, 231, 0.4);
 }
-
-
 
 .projectButton {
     background-color: #57647c;
@@ -166,44 +168,28 @@ body {
     min-width: 300px;
 }
 
-.home-section__form {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 500px;
-}
-
-/* Navbar responsive adjustments */
-@media (max-width: 991px) {
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .home-section__layout {
-        flex-direction: column;
-    }
-
-    .home-section__form {
-        max-width: 100%;
-    }
-
-    .home-section__form form {
-        padding: 2rem !important;
-    }
-
-    .home-section__form .form-control {
-        font-size: 1rem;
-        padding: 0.75rem;
-    }
-}
-
 .text-primary {
     color: #333;
     font-size: 2.2rem;
     text-align: center;
     width: 100%;
     line-height: 1.6;
+}
+
+/*SERVICES*/
+
+.services {
+    background: #fafafa;
+    position: relative;
+    padding: 250px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.services__row {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 /*ABOUT*/
