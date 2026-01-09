@@ -14,17 +14,17 @@
 <body>
 
   <!-- HEADER, NAV BAR -->
-  <nav class="navbar navbar-expand-lg navbar-transparent" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="nav-container">
-      <a class="navbar-brand" href="#index">Tomas Brainovich</a>
+      <a class="navbar-brand" href="#home">Tomas Brainovich</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mx-auto">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
@@ -34,19 +34,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">Social</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="https://www.linkedin.com/in/tbraino" target="_blank"
-                rel="noreferrer">LinkedIn</a>
-              <a class="dropdown-item" href="https://github.com/tomasbraino" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="dropdown-item" href="https://twitter.com/tbrainovich" target="_blank"
-                rel="noreferrer">Twitter</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#contact">Work with me</a>
-            </div>
-          </li>
         </ul>
       </div>
     </div>
@@ -55,20 +42,15 @@
   <!-- Blocks for content -->
 
   <section id="home" class="home-section"> <!--Home introduction-->
-    <div class="home-section__content">
-      <div class="home-section__info">
-        <div class="home-section__layout">
-          <div class="home-section__text">
-            <h1 class="display-5 fw-bold lh-2 text-body-emphasis mb-3">
-              Desarrollo Web Estratégico
-              <br>para Negocios que Quieren <br>
-              Vender Más.
-            </h1>
-            <div class="home-section_button text-start">
-              <button type="button" class="btn btn-primary btn-lg">Empieza tu proyecto ahora</button>
-            </div>
-          </div>
-
+    <div class="home-section__content container">
+      <div class="home-section__text text-center text-lg-start">
+        <h1 class="display-3 fw-bold lh-1 text-white mb-4">
+          Desarrollo Web Estratégico
+          <br>para Negocios que Quieren <br>
+          <span class="text-highlight">Vender Más.</span>
+        </h1>
+        <div class="home-section_button">
+          <a href="#contact" class="btn">Empieza tu proyecto ahora</a>
         </div>
       </div>
     </div>

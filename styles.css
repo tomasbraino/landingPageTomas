@@ -1,13 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;700&display=swap');
 
 body {
     margin: 0px;
     width: 100%;
     padding: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
-.bebas-neue-regular {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bebas-neue-regular,
+.navbar-brand,
+.nav-link {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -47,7 +55,7 @@ body {
 }
 
 .nav-container {
-    width: 86%;
+    width: 65%;
     margin: 0 auto;
     display: flex;
     flex-wrap: inherit;
@@ -60,13 +68,15 @@ body {
 .home-section {
     color: #fff;
     background:
-        linear-gradient(to right, rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)),
+        linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.6)),
         url(./assets/images/black1.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 60rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -81,6 +91,10 @@ body {
     color: #ffffff;
 }
 
+.text-highlight {
+    color: #2fa4e7 !important;
+}
+
 .home-section_button {
     margin-top: 3rem;
     text-align: left;
@@ -91,8 +105,8 @@ body {
 .home-section_button .btn {
     position: relative;
     /* Essential for positioning the pseudo-element */
-    padding: 15px 30px;
-    font-size: 24px;
+    padding: 1.25rem 3rem;
+    font-size: 1.5rem;
     color: #fbfbfb;
     /* Cyan text color */
     text-decoration: none;
@@ -134,46 +148,10 @@ body {
 }
 
 .home-section__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 90rem;
-    width: 92%;
-}
-
-.heading-primary {
-    font-size: 6rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    color: #111;
-    font-weight: 800;
-}
-
-.home-section__info {
-    margin: 3rem auto 0 auto;
-    max-width: 80rem;
-}
-
-.home-section__layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    flex-wrap: wrap;
-}
-
-.home-section__text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.text-primary {
-    color: #333;
-    font-size: 2.2rem;
-    text-align: center;
     width: 100%;
-    line-height: 1.6;
+    max-width: 1400px;
+    margin: 0 auto;
+    z-index: 2;
 }
 
 /*SERVICES*/
@@ -624,8 +602,9 @@ form {
 
     /* Home Section Mobile */
     .home-section {
-        min-height: auto;
-        padding: 4rem 0;
+        padding: 6rem 0;
+        /* Add padding to prevent content hitting edges if height constrained */
+        min-height: 100vh;
     }
 
     .home-section__content {
@@ -637,23 +616,9 @@ form {
         padding: 2rem 1.5rem;
     }
 
-    .home-section__info {
-        margin: 0;
-        max-width: 100%;
-    }
-
-    .home-section__layout {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
     .home-section__text {
         min-width: 100%;
-    }
-
-    .home-section__form {
-        max-width: 100%;
-        width: 100%;
+        text-align: center;
     }
 
     /* Typography Mobile */
@@ -848,9 +813,5 @@ form {
 @media (min-width: 1200px) {
     .home-section__content {
         max-width: 120rem;
-    }
-
-    .home-section__info {
-        max-width: 100rem;
     }
 }
