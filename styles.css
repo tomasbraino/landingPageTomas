@@ -97,7 +97,6 @@ h6,
 
 .home-section_button {
     margin-top: 3rem;
-    text-align: left;
     flex-grow: 1;
 }
 
@@ -148,8 +147,7 @@ h6,
 }
 
 .home-section__content {
-    width: 100%;
-    max-width: 1400px;
+    width: 65%;
     margin: 0 auto;
     z-index: 2;
 }
