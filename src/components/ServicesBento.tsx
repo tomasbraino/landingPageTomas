@@ -32,7 +32,7 @@ const ServicesBento = () => {
                         </div>
                         <h4 className="text-xl font-bold text-white mb-3">End-to-End Automation Frameworks</h4>
                         <p className="text-slate-400 mb-4">
-                            Arquitectura de pruebas robusta con <strong>Playwright</strong> y <strong>Cypress</strong>. Creamos suites de regresión que se ejecutan en paralelo, reduciendo el tiempo de feedback de horas a minutos.
+                            Arquitectura de pruebas robusta con <strong>Playwright</strong> o <strong>Selenium</strong>. Creamos suites de regresión que se ejecutan en paralelo, reduciendo el tiempo de feedback de horas a minutos.
                         </p>
                         <ul className="grid grid-cols-2 gap-2 text-sm text-slate-500 font-mono">
                             <li className="flex items-center gap-2">✔ Self-healing Tests</li>

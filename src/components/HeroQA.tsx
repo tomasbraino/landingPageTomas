@@ -56,13 +56,13 @@ const HeroQA = () => {
                             </button>
                         </div>
 
-                        {/* Stack Tecnológico (Iconos con Texto) */}
+                        {/* Tech stack (icons with text) */}
                         <div className="mt-10 pt-8 border-t border-slate-800">
                             <p className="text-xs text-slate-500 font-mono uppercase tracking-widest mb-4">Herramientas & Stack</p>
                             <div className="flex flex-wrap justify-center lg:justify-start gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
                                 <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><Terminal size={16} /> Playwright</div>
-                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><CheckCircle size={16} /> Cypress</div>
-                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><Server size={16} /> Jenkins/CI</div>
+                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><CheckCircle size={16} /> Selenium</div>
+                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><Server size={16} /> Jenkins and Azure DevOps for CI/CD</div>
                                 <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><ShieldCheck size={16} /> Security</div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ const HeroQA = () => {
                     <div className="flex-1 w-full max-w-lg lg:max-w-xl perspective-1000 hidden lg:block">
                         <div className="relative bg-slate-900 rounded-xl border border-slate-800 shadow-2xl overflow-hidden transform rotate-y-12 transition-transform hover:rotate-0 duration-700 group">
 
-                            {/* Header de la Terminal */}
+                            {/* Terminal header */}
                             <div className="bg-slate-800 px-4 py-3 flex items-center gap-2 border-b border-slate-700">
                                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -80,12 +80,12 @@ const HeroQA = () => {
                                 <div className="ml-auto text-xs text-slate-400 font-mono">zsh — test-runner</div>
                             </div>
 
-                            {/* Cuerpo de la Terminal */}
+                            {/* Terminal body */}
                             <div className="p-6 font-mono text-sm space-y-2">
                                 <div className="text-slate-400">$ npx playwright test</div>
                                 <div className="text-yellow-400">⚠ Starting 142 tests across 3 shards...</div>
 
-                                {/* Simulamos procesos */}
+                                {/* Simulated processes */}
                                 <div className="space-y-1 mt-4">
                                     <div className="flex items-center gap-2 text-emerald-400 animate-pulse">
                                         <CheckCircle className="w-4 h-4" />
@@ -109,7 +109,7 @@ const HeroQA = () => {
                             </div>
                         </div>
 
-                        {/* Card Flotante (ROI) */}
+                        {/* Floating card (ROI) */}
                         <div className="absolute -bottom-6 -right-6 bg-slate-800 p-4 rounded-lg border border-slate-700 shadow-xl hidden sm:block animate-bounce-slow">
                             <div className="text-xs text-slate-400 mb-1">Ahorro en Regresión Manual</div>
                             <div className="text-2xl font-bold text-white">+45 Horas/mes</div>
