@@ -1,7 +1,7 @@
 // src/components/HeroQA.tsx
 import React from 'react';
 // Importamos los iconos que necesitamos
-import { Terminal, CheckCircle, ArrowRight, Play, Server, ShieldCheck } from 'lucide-react';
+import { Terminal, CheckCircle, ArrowRight, Play, Server, ShieldCheck, Code, Database, Cpu, Zap } from 'lucide-react';
 
 const HeroQA = () => {
     return (
@@ -58,12 +58,14 @@ const HeroQA = () => {
 
                         {/* Tech stack (icons with text) */}
                         <div className="mt-10 pt-8 border-t border-slate-800">
-                            <p className="text-xs text-slate-500 font-mono uppercase tracking-widest mb-4">Herramientas & Stack</p>
-                            <div className="flex flex-wrap justify-center lg:justify-start gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><Terminal size={16} /> Playwright</div>
-                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><CheckCircle size={16} /> Selenium</div>
-                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><Server size={16} /> Jenkins and Azure DevOps for CI/CD</div>
-                                <div className="flex items-center gap-2 font-mono text-sm text-slate-300"><ShieldCheck size={16} /> Security</div>
+                            <p className="text-xs text-slate-500 font-mono uppercase tracking-widest mb-4">Stack Tecnológico</p>
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6 opacity-80 text-sm text-slate-300 font-mono">
+                                <div className="flex items-center gap-2 hover:text-emerald-400 transition-colors"><Terminal className="w-4 h-4 text-emerald-400" /> Playwright & Selenium</div>
+                                <div className="flex items-center gap-2 hover:text-cyan-400 transition-colors"><Server className="w-4 h-4 text-cyan-400" /> Jenkins & GitHub Actions</div>
+                                <div className="flex items-center gap-2 hover:text-blue-400 transition-colors"><Code className="w-4 h-4 text-blue-400" /> TS/JS, Python, Java</div>
+                                <div className="flex items-center gap-2 hover:text-purple-400 transition-colors"><Zap className="w-4 h-4 text-purple-400" /> k6 & JMeter Performance</div>
+                                <div className="flex items-center gap-2 hover:text-yellow-400 transition-colors"><Database className="w-4 h-4 text-yellow-400" /> Postman API & SQL</div>
+                                <div className="flex items-center gap-2 hover:text-pink-400 transition-colors"><Cpu className="w-4 h-4 text-pink-400" /> Cursor, Antigravity, Devin</div>
                             </div>
                         </div>
                     </div>
