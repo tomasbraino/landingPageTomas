@@ -90,7 +90,7 @@ test('Debería completar el checkout del carrito de compras', async ({ page }) =
                         </p>
                         <h3>2. Automatizando Tests de Prompt Injection (Seguridad)</h3>
                         <p>
-                            Es mandatorio validar que los usuarios no puedan hackear el prompt de sistema de tus agentes. Para automatizar esto, alimentamos al runner con un set de payloads maliciosos comunes ("Prompt Injections") y validamos que el modelo devuelva un mensaje de rechazo estándar en lugar de divulgar datos privados o ignorar sus instrucciones originales.
+                            Es mandatorio validar que los usuarios no puedan hackear el prompt de sistema de tus agentes. Para automatizar esto, alimentamos al runner con un set de payloads maliciosos comunes (&quot;Prompt Injections&quot;) y validamos que el modelo devuelva un mensaje de rechazo estándar en lugar de divulgar datos privados o ignorar sus instrucciones originales.
                         </p>
 
                         <div className="my-8">
@@ -181,7 +181,7 @@ jobs:
 
                         <h3>2. Bloqueo Automatizado (Quality Gates)</h3>
                         <p>
-                            Al definir estas reglas en GitHub, el botón "Merge pull request" permanece deshabilitado hasta que las compuertas de Actions devuelvan un estado exitoso. Esto elimina el factor humano de los despliegues de viernes por la tarde.
+                            Al definir estas reglas en GitHub, el botón &quot;Merge pull request&quot; permanece deshabilitado hasta que las compuertas de Actions devuelvan un estado exitoso. Esto elimina el factor humano de los despliegues de viernes por la tarde.
                         </p>
                     </>
                 );
@@ -197,7 +197,7 @@ jobs:
                         </p>
                         <h3>2. Estableciendo Umbrales de Calidad (Thresholds)</h3>
                         <p>
-                            Una prueba de carga no es solo tirar tráfico. Definimos criterios de aceptación como: "El 95% de las solicitudes al carrito deben tardar menos de 500ms y la tasa de error no puede superar el 1%". Si estas métricas fallan, el test falla.
+                            Una prueba de carga no es solo tirar tráfico. Definimos criterios de aceptación como: &quot;El 95% de las solicitudes al carrito deben tardar menos de 500ms y la tasa de error no puede superar el 1%&quot;. Si estas métricas fallan, el test falla.
                         </p>
 
                         <div className="my-8">
