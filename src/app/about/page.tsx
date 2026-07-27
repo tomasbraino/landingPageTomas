@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import { Terminal, Shield, Award, Users, Download, ArrowRight, CheckCircle } from 'lucide-react';
